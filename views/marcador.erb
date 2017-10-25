@@ -1,1 +1,8 @@
 <h1>MARCADOR: <%= @marcador %></h1>
+<form method="POST" action="/anotar">
+  <select name="jugador">Jugador
+      <option value="1">Jugador1</option>  
+      <option value="2">Jugador2</option>
+   </select>
+  <input type="submit" value="Anoto">
+</form>

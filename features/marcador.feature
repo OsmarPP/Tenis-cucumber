@@ -5,3 +5,4 @@ Feature:  Como albitro
 Scenario:
           Given Visito la pagina de inicio
           Then Deberia mostrar el marcador "MARCADOR: 0-0"
+          
