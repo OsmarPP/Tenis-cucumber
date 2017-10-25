@@ -1,10 +1,11 @@
 require 'sinatra'
+require './bin/marcadorTenis.rb'
 set :bind, '0.0.0.0'
 set :port, 3000
 
-$marcadorTenis = '0-0'
+$MT = MarcadorTenis.new()
 
 get '/' do
-  @marcador = $marcadorTenis
+  @marcador = $MT.getMarcador
   erb :marcador
 end
